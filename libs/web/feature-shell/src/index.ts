@@ -1,1 +1,1 @@
-const variable = 'web-feature-shell'
+export * from './lib/web-feature-shell.module'

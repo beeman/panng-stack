@@ -52,6 +52,27 @@
     },
     "web-feature-auth": {
       "tags": ["scope:web", "type:feature"]
+    },
+    "api-feature-post": {
+      "tags": ["scope:api", "type:feature"]
+    },
+    "api-feature-comment": {
+      "tags": ["scope:api", "type:feature"]
+    },
+    "api-feature-profile": {
+      "tags": ["scope:api", "type:feature"]
+    },
+    "web-feature-core": {
+      "tags": ["scope:web", "type:feature"]
+    },
+    "web-feature-post": {
+      "tags": ["scope:web", "type:feature"]
+    },
+    "web-feature-profile": {
+      "tags": ["scope:web", "type:feature"]
+    },
+    "web-data-access-auth": {
+      "tags": ["scope:web", "type:data-access"]
     }
   }
 }

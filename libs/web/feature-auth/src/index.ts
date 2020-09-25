@@ -1,1 +1,2 @@
-const variable = 'web-feature-auth'
+export * from './lib/web-feature-auth.module'
+export * from './lib/web-feature-auth.service'

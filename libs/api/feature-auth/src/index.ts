@@ -1,1 +1,7 @@
+export * from './lib/decorators/ctx-user.decorator'
+export * from './lib/guards/gql-auth.guard'
 export * from './lib/api-feature-auth.module'
+export * from './lib/api-feature-auth.service'
+export * from './lib/models/user'
+export * from './lib/models/role'
+export * from './lib/models/user-token'

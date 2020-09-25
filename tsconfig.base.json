@@ -21,7 +21,14 @@
       "@angular-graphql/api/feature-auth": ["libs/api/feature-auth/src/index.ts"],
       "@angular-graphql/web/data-access": ["libs/web/data-access/src/index.ts"],
       "@angular-graphql/web/feature-shell": ["libs/web/feature-shell/src/index.ts"],
-      "@angular-graphql/web/feature-auth": ["libs/web/feature-auth/src/index.ts"]
+      "@angular-graphql/web/feature-auth": ["libs/web/feature-auth/src/index.ts"],
+      "@angular-graphql/api/feature-post": ["libs/api/feature-post/src/index.ts"],
+      "@angular-graphql/api/feature-comment": ["libs/api/feature-comment/src/index.ts"],
+      "@angular-graphql/api/feature-profile": ["libs/api/feature-profile/src/index.ts"],
+      "@angular-graphql/web/feature-core": ["libs/web/feature-core/src/index.ts"],
+      "@angular-graphql/web/feature-post": ["libs/web/feature-post/src/index.ts"],
+      "@angular-graphql/web/feature-profile": ["libs/web/feature-profile/src/index.ts"],
+      "@angular-graphql/web/data-access-auth": ["libs/web/data-access-auth/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

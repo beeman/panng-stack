@@ -1,0 +1,64 @@
+fragment authorDetails on Profile {
+  id
+  username
+  avatarUrl
+  name
+}
+
+fragment postDetails on Post {
+  id
+  text
+  created
+  commentCount
+  author {
+    ...authorDetails
+  }
+}
+
+fragment commentDetails on Comment {
+  id
+  text
+  created
+  author {
+    ...authorDetails
+  }
+}
+
+query posts {
+  posts {
+    ...postDetails
+  }
+}
+
+query userPosts($userId: String!) {
+  userPosts(userId: $userId) {
+    ...postDetails
+  }
+}
+
+query post($id: String!) {
+  post(id: $id) {
+    ...postDetails
+    comments {
+      ...commentDetails
+    }
+  }
+}
+
+query comments($postId: String!) {
+  comments(postId: $postId) {
+    ...commentDetails
+  }
+}
+
+mutation createPost($data: CreatePostInput!) {
+  createPost(data: $data) {
+    ...postDetails
+  }
+}
+
+mutation createComment($data: CreateCommentInput!) {
+  createComment(data: $data) {
+    ...commentDetails
+  }
+}
