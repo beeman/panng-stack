@@ -17,8 +17,8 @@ export class Profile {
   @Field({ nullable: true })
   avatarUrl?: string
 
-  // @Field({ nullable: true })
-  // bio?: string
+  @Field({ nullable: true })
+  bio?: string
 
   // @Field({ nullable: true })
   // location?: string

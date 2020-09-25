@@ -3,7 +3,7 @@ fragment profileDetails on Profile {
   username
   avatarUrl
   name
-  #  bio
+  bio
   #  location
 }
 

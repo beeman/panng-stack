@@ -50,6 +50,7 @@ export type Profile = {
   username?: Maybe<Scalars['String']>
   name?: Maybe<Scalars['String']>
   avatarUrl?: Maybe<Scalars['String']>
+  bio?: Maybe<Scalars['String']>
   posts?: Maybe<Post>
 }
 
@@ -297,7 +298,7 @@ export type CreateCommentMutation = { __typename?: 'Mutation' } & {
 
 export type ProfileDetailsFragment = { __typename?: 'Profile' } & Pick<
   Profile,
-  'id' | 'username' | 'avatarUrl' | 'name'
+  'id' | 'username' | 'avatarUrl' | 'name' | 'bio'
 >
 
 export type ProfilesQueryVariables = Exact<{ [key: string]: never }>
@@ -371,6 +372,7 @@ export const ProfileDetailsFragmentDoc = gql`
     username
     avatarUrl
     name
+    bio
   }
 `
 export const MeDocument = gql`

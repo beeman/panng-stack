@@ -26,6 +26,7 @@
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
+    "docker:servers": "docker-compose up",
     "dev:api": "nx serve api",
     "build:api": "nx build api --prod",
     "dev:web": "nx serve web",

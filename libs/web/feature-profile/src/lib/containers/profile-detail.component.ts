@@ -13,7 +13,7 @@ import { WebFeatureProfileService } from '../web-feature-profile.service'
           [avatarUrl]="profile?.avatarUrl"
           [username]="profile?.username"
           [name]="profile?.name"
-          [bio]="'Bio Placeholder'"
+          [bio]="profile?.bio"
           [location]="'Location Placeholder'"
         >
         </app-profile-card>
