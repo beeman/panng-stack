@@ -15,11 +15,43 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "accessToken": "YTE1ODUwMzUtYmVkMi00OGY1LWFmYmMtYzBlM2E3Y2EyZGYwfHJlYWQtd3JpdGU=",
+        "cacheableOperations": ["build", "test", "lint", "e2e"],
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "api": {
+      "tags": []
+    },
+    "api-data-access": {
+      "tags": ["scope:api", "type:data-access"]
+    },
+    "api-feature-core": {
+      "tags": ["scope:api", "type:feature"]
+    },
+    "api-feature-auth": {
+      "tags": ["scope:api", "type:feature"]
+    },
+    "web": {
+      "tags": []
+    },
+    "web-e2e": {
+      "tags": [],
+      "implicitDependencies": ["web"]
+    },
+    "web-data-access": {
+      "tags": ["scope:web", "type:data-access"]
+    },
+    "web-feature-shell": {
+      "tags": ["scope:web", "type:feature"]
+    },
+    "web-feature-auth": {
+      "tags": ["scope:web", "type:feature"]
+    }
+  }
 }
