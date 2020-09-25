@@ -14,7 +14,7 @@ import { WebFeatureProfileService } from '../web-feature-profile.service'
           [username]="profile?.username"
           [name]="profile?.name"
           [bio]="profile?.bio"
-          [location]="'Location Placeholder'"
+          [location]="profile?.location"
         >
         </app-profile-card>
       </ng-container>

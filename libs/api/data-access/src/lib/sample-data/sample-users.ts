@@ -11,7 +11,7 @@ export const sampleUsers: UserCreateInput[] = [
     avatarUrl: 'https://imgur.com/Y4dT5W0.png',
     name: 'Summer Smith',
     role: 'User',
-    //location: 'Who cares...',
+    location: 'Who cares...',
     bio: 'Hey!',
 
     posts: {
@@ -30,7 +30,7 @@ export const sampleUsers: UserCreateInput[] = [
     avatarUrl: 'https://imgur.com/Ca4c884.png',
     name: 'Morty Smith',
     role: 'User',
-    //location: 'School!',
+    location: 'School!',
     bio: "Hi there I'm Morty 🎉!",
     posts: {
       create: [
@@ -48,7 +48,7 @@ export const sampleUsers: UserCreateInput[] = [
     avatarUrl: 'https://imgur.com/0Ao2f63.png',
     name: 'Rick Sanchez',
     role: 'Admin',
-    //location: 'Earth C-137',
+    location: 'Earth C-137',
     bio: 'I am the smartest guy in all universes!',
     posts: {
       create: {
@@ -77,7 +77,7 @@ export const sampleUsers: UserCreateInput[] = [
     avatarUrl: 'https://imgur.com/o28uw9C.png',
     name: 'Beth Smith',
     role: 'User',
-    //location: 'Earth',
+    location: 'Earth',
     bio: 'Veterinarian',
     posts: {
       create: [
@@ -95,7 +95,7 @@ export const sampleUsers: UserCreateInput[] = [
     avatarUrl: 'https://imgur.com/Yr4YiTi.png',
     name: 'Jerry Smith',
     role: 'User',
-    //location: 'Earth',
+    location: 'Earth',
     bio: 'Husband of @beth',
     posts: {
       create: [

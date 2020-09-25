@@ -4,7 +4,7 @@ fragment profileDetails on Profile {
   avatarUrl
   name
   bio
-  #  location
+  location
 }
 
 query profiles {

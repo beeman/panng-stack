@@ -20,6 +20,6 @@ export class Profile {
   @Field({ nullable: true })
   bio?: string
 
-  // @Field({ nullable: true })
-  // location?: string
+  @Field({ nullable: true })
+  location?: string
 }
